@@ -105,7 +105,7 @@ export function Catalog() {
 
   return (
     <section id="catalog" className="py-20 lg:py-32 bg-secondary/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
@@ -135,7 +135,7 @@ export function Catalog() {
         </div>
 
         {/* Invitation Grid */}
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-2">
           {filteredInvitations.map((invitation) => (
             <Card 
               key={invitation.id} 
@@ -182,14 +182,14 @@ export function Catalog() {
                   </div> */}
                 </div>
                 {/* Content */}
-                <div className="p-3 flex flex-col gap-2">
+                <div className="p-2 flex flex-col gap-1.5">
                   <h3 className="font-serif text-sm font-semibold text-card-foreground">
                     {language === "id" ? invitation.title : invitation.titleEn}
                   </h3>
                   <p className="text-xs text-muted-foreground line-clamp-2">
                     {language === "id" ? invitation.description : invitation.descriptionEn}
                   </p>
-                  <div className="flex flex-col gap-2 pt-2">
+                  <div className="flex flex-col gap-1.5 pt-1">
                     <Button 
                       variant="outline" 
                       size="sm"
