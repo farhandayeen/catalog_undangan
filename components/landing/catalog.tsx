@@ -192,17 +192,17 @@ export function Catalog() {
                   <div className="flex flex-col gap-1 pt-1">
                     <Button 
                       variant="outline" 
-                      size="xs"
-                      className="flex-1"
+                      size="sm"
+                      className="w-full text-xs justify-center gap-1"
                       onClick={() => handlePreview(invitation)}
                     >
-                      <Eye className="mr-2 h-4 w-4" />
+                      <Eye className="h-3 w-3" />
                       {t("catalog.preview")}
                     </Button>
                     <Button 
                       asChild
-                      size="xs"
-                      className="flex-1 bg-primary hover:bg-primary/90"
+                      size="sm"
+                      className="w-full text-xs px-1 bg-primary hover:bg-primary/90"
                     >
                       <a
                         href={`https://wa.me/6281234567890?text=${encodeURIComponent(
@@ -213,7 +213,7 @@ export function Catalog() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <MessageCircle className="mr-2 h-4 w-4" />
+                        <MessageCircle className="h-3 w-3" />
                         {t("catalog.order")}
                       </a>
                     </Button>
