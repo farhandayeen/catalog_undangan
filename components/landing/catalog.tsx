@@ -135,7 +135,7 @@ export function Catalog() {
         </div>
 
         {/* Invitation Grid */}
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {filteredInvitations.map((invitation) => (
             <Card 
               key={invitation.id} 
@@ -179,8 +179,8 @@ export function Catalog() {
                         </a>
                       </Button>
                     </div>
-                  </div>
-                </div> */}
+                  </div> */}
+                </div>
                 {/* Content */}
                 <div className="p-4 flex flex-col gap-3">
                   <h3 className="font-serif text-lg font-semibold text-card-foreground">
