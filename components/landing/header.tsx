@@ -25,9 +25,7 @@ export function Header() {
   ]
 
   return (
-    <header className="fixed top - 0 left - 0 right - 0 z - 50
-bg - gradient - to - r from - rose - 50 / 80 via - white / 70 to - pink - 50 / 80
-backdrop - blur - md border - b border - rose - 100 / 50 shadow - sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-rose-50 via-white to-pink-50 border-b border-rose-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -112,9 +110,7 @@ backdrop - blur - md border - b border - rose - 100 / 50 shadow - sm">
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md: hidden
-bg - gradient - to - b from - rose - 50 / 90 to - white / 90
-backdrop - blur - md border - b border - rose - 100 / 50">
+        <div className="md:hidden bg-gradient-to-b from-rose-50 to-white border-b border-rose-100">
           <div className="px-4 py-4 space-y-3">
             {navItems.map((item) => (
               <a
