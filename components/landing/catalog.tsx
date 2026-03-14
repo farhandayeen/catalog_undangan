@@ -189,7 +189,7 @@ export function Catalog() {
                   <p className="text-sm text-muted-foreground line-clamp-2">
                     {language === "id" ? invitation.description : invitation.descriptionEn}
                   </p>
-                  <div className="flex gap-2 pt-2">
+                  <div className="flex flex-col gap-2 pt-2">
                     <Button 
                       variant="outline" 
                       size="sm"
