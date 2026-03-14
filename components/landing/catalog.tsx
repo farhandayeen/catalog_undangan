@@ -186,9 +186,9 @@ export function Catalog() {
                   <h3 className="font-serif text-sm font-semibold text-card-foreground">
                     {language === "id" ? invitation.title : invitation.titleEn}
                   </h3>
-                  <p className="text-xs text-muted-foreground line-clamp-2">
+                  {/*<p className="text-xs text-muted-foreground line-clamp-2">
                     {language === "id" ? invitation.description : invitation.descriptionEn}
-                  </p>
+                  </p> */}
                   <div className="flex flex-col gap-1 pt-1">
                     <Button 
                       variant="outline" 
