@@ -189,10 +189,10 @@ export function Catalog() {
                   <p className="text-xs text-muted-foreground line-clamp-2">
                     {language === "id" ? invitation.description : invitation.descriptionEn}
                   </p>
-                  <div className="flex flex-col gap-1.5 pt-1">
+                  <div className="flex flex-col gap-1 pt-1">
                     <Button 
                       variant="outline" 
-                      size="sm"
+                      size="xs"
                       className="flex-1"
                       onClick={() => handlePreview(invitation)}
                     >
@@ -201,7 +201,7 @@ export function Catalog() {
                     </Button>
                     <Button 
                       asChild
-                      size="sm"
+                      size="xs"
                       className="flex-1 bg-primary hover:bg-primary/90"
                     >
                       <a
