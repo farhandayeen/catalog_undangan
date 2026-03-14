@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect} from "react"
+import { useState } from "react"
 import { useLanguage } from "@/contexts/language-context"
 import { useTheme } from "@/contexts/theme-context"
 import { Button } from "@/components/ui/button"
@@ -16,13 +16,6 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { language, setLanguage, t } = useLanguage()
   const { theme, toggleTheme } = useTheme()
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
 
   const navItems = [
     { label: t("nav.home"), href: "#" },
@@ -32,11 +25,9 @@ export function Header() {
   ]
 
   return (
-    <header className={ `fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled
-        ? "bg-white/95 backdrop-blur-md shadow-md border-b border-rose-100"
-        : "bg-gradient-to-b from-black/20 to-transparent border-b border-transparent"
-    }` } >
+    <header className="fixed top - 0 w - full z - 50
+bg - gradient - to - r from - rose - 50 via - white to - pink - 50
+border - b border - rose - 100 shadow - sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -44,9 +35,7 @@ export function Header() {
             <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-serif font-bold text-sm">ID</span>
             </div>
-            <span className={`font-serif text-xl font-semibold transition-colors ${
-              scrolled ? "text-foreground" : "text-white"
-            }`}>InviteDream</span>
+            <span className="font-serif text-xl font-semibold text-foreground">InviteDream</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -55,11 +44,7 @@ export function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className={ `text-sm font-medium transition-colors ${
-                  scrolled 
-                    ? "text-muted-foreground hover:text-foreground" 
-                    : "text-white/90 hover:text-white"
-                }` }
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item.label}
               </a>
