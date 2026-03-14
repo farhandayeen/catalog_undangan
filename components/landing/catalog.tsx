@@ -182,11 +182,11 @@ export function Catalog() {
                   </div> */}
                 </div>
                 {/* Content */}
-                <div className="p-4 flex flex-col gap-3">
-                  <h3 className="font-serif text-lg font-semibold text-card-foreground">
+                <div className="p-3 flex flex-col gap-2">
+                  <h3 className="font-serif text-sm font-semibold text-card-foreground">
                     {language === "id" ? invitation.title : invitation.titleEn}
                   </h3>
-                  <p className="text-sm text-muted-foreground line-clamp-2">
+                  <p className="text-xs text-muted-foreground line-clamp-2">
                     {language === "id" ? invitation.description : invitation.descriptionEn}
                   </p>
                   <div className="flex flex-col gap-2 pt-2">
